@@ -125,7 +125,7 @@
   width: 82px;
   height: 72px;
 }
-жт
+
 .value {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -142,4 +142,159 @@
   font-size: 16px;
   line-height: 1.5;
   color: #2e2f42;
+}
+
+.delay-label {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 36px;
+  margin-left: 156px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.delay-input {
+  box-sizing: border-box;
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+}
+
+.delay-input:hover {
+  border: 1px solid #000;
+}
+
+.delay-input:focus {
+  border: 1px solid #4e75ff;
+  outline: none;
+}
+
+.state-fieldset {
+  width: 360px;
+  height: 78px;
+  margin-left: 156px;
+  margin-top: 30px;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.state-fieldset:hover {
+  border: 1px solid #000;
+}
+
+.state-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 48px;
+  width: 264px;
+  height: 32px;
+}
+
+.state-legend {
+  display: block;
+  text-align: left;
+  margin-left: 28px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.submit-button {
+  margin-left: 156px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.submit-button:hover {
+  background: #6c8cff;
+}
+
+.fulfilled-label:checked,
+.rejected-label:checked {
+  background: #4e75ff;
+  border: 1px solid #4e75ff;
+}
+
+.state-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.state-label input {
+  display: none;
+
+}
+
+.custom-radio {
+  border: 1px solid #757575;
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.state-label input:checked+.custom-radio::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 14px;
+  width: 12px;
+  height: 12px;
+  background-color: #4e75ff;
+  transform: translate(-50%, -50%);
+}
+
+.custom-radio:hover {
+  border: 1px solid #000;
+}
+
+.state-label input[type="radio"]:checked+.custom-radio {
+  border-color: #4e75ff;
 }
